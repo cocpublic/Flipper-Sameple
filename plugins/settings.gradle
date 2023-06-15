@@ -1,0 +1,3 @@
+rootProject.name = "plugins"
+include ':demo'
+include ':demo_base'

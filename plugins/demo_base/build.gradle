@@ -1,0 +1,13 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation gradleApi()
+    api 'androidx.annotation:annotation:1.0.0'
+    api project(path: ':demo_base')
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+apply plugin: 'com.bzl.plugins.publish'
