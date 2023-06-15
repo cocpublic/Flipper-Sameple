@@ -1,4 +1,5 @@
-rootProject.name = "GradlePluginTemplate"
-includeBuild("./plugins")
-include ':app'
+rootProject.name = "Flipper-Sample"
+//includeBuild("./plugins")
+//include ':app'
 include ':lib_demo'
+include ':sample'

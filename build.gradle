@@ -15,7 +15,7 @@ buildscript {
 plugins {
     // 必须要这个 不然会找不到引用
     // 这个 id 就是在 versionPlugin 文件夹下 build.gradle 文件内定义的id
-    id "com.plugins.demo" apply false
+//    id "com.plugins.demo" apply false
 }
 allprojects {
     repositories {
@@ -38,4 +38,13 @@ allprojects {
 
 task clean(type: Delete) {
     delete rootProject.buildDir
+}
+ext {
+    minSdkVersion = 15
+    targetSdkVersion = 33
+    compileSdkVersion = 33
+    buildToolsVersion = "33.0.2"
+    ndkVersion = "25.1.8937393"
+//    javaTargetVersion = JavaVersion.VERSION_17
+    javaTargetVersion = JavaVersion.VERSION_1_8
 }

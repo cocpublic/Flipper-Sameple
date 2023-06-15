@@ -1,5 +1,5 @@
 apply plugin: 'com.android.application'
-apply plugin: 'com.plugins.demo'
+//apply plugin: 'com.plugins.demo'
 
 android {
     compileSdk 30
